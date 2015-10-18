@@ -1,0 +1,15 @@
+SELECT * FROM(
+  SELECT f1.docid, SUM(f1.count * f2.count) AS sim
+  FROM frequency f1, (
+    SELECT 'q' as docid, 'washington' as term, 1 as count
+    UNION
+    SELECT 'q' as docid, 'taxes' as term, 1 as count
+    UNION
+    SELECT 'q' as docid, 'treasury' as term, 1 as count
+  ) f2
+  WHERE f2.docid = 'q'
+  AND f1.term = f2.term
+  GROUP BY f1.docid
+) f
+ORDER BY f.sim DESC
+LIMIT 0,10;
