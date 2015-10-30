@@ -22,6 +22,8 @@ def mapper(record):
 def reducer(key, list_of_values):
     # key: word
     # value: list of documents identifiers
+
+    # Removing duplicates
     final_list = list(set(list_of_values))
     mr.emit((key, final_list))
 
