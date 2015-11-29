@@ -5,7 +5,7 @@ date: "November 29, 2015"
 output: pdf_document
 ---
 
-# Don't leave your car alone in Seattle, especially on Wednesdays and Thurdays
+# Don't leave your car alone in Seattle, especially on Wednesdays and Thursdays
 
 For this assignment, I chose to focus on the repartition of the types of crimes 
 in both Seattle and San Francisco. Since there are a lot of crime categories, 
