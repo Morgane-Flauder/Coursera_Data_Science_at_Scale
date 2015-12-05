@@ -1,3 +1,14 @@
+
+
+The instructions and data description for the assignment are in the file
+assignment4.md
+
+
+
+
+
+================================================================
+
 Instructions on how to run example.pig.
 
 ================================================================
